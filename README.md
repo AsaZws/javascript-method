@@ -17,3 +17,14 @@
     error: function() {}
     })
     
+### axios 
+    可以在node.js中使用
+    提供了并发请求的接口
+    支持Promise API
+    
+    axios({
+    method: 'GET',
+    url: url,
+    })
+    .then(res => {console.log(res)})
+    .catch(err => {console.log(err)})
