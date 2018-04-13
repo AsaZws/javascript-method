@@ -8,8 +8,7 @@
     </script>
 
 ### jquery ajax 函数
-    </script>
-    $.ajax({
+    $.ajax({
     type: 'POST',
     url: url,
     data: data,
@@ -17,4 +16,4 @@
     success: function() {},
     error: function() {}
     })
-
+    
