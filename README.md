@@ -6,9 +6,9 @@
         window.location = “mobile.html”; //可以换成http地址
         }
     </script>
-    </hr>
-### jquery ajax
-    $.ajax({
+</hr>
+### jquery ajax 函数
+    $.ajax({
     type: 'POST',
     url: url,
     data: data,
