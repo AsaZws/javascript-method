@@ -1,13 +1,13 @@
 ## 日常工作中的一些js语句可以直接引用进来的
 
-### JS判断移动设备最佳方法 并实现跳转至手机版网页
+### 1.JS判断移动设备最佳方法 并实现跳转至手机版网页
     <script type=”text/javascript”>
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         window.location = “mobile.html”; //可以换成http地址
         }
     </script>
-
-### jquery ajax 函数
+    
+### 2.jquery ajax 函数
     $.ajax({
     type: 'POST',
     url: url,
@@ -17,7 +17,7 @@
     error: function() {}
     })
     
-### axios 
+### 3.axios 
     可以在node.js中使用
     提供了并发请求的接口
     支持Promise API
@@ -43,7 +43,7 @@
         // Both requests are now complete
       }));
       
-### JS判断移动设备最佳方法 并实现跳转至手机版网页
+### 4.网页滑动头部固定
 ##### html =>
     <div id="wrap" class="wrap">
 		<div id="top" class="top"></div>
