@@ -93,3 +93,28 @@
 			}
 		}
 	}
+### 倒计时
+#### html =>
+	<input type="button" value="请阅读此协议(10)" disabled=disabled id="btn"/>
+#### js =>
+	//设置setInterval事件，1秒跳转一次
+    //设置一个变量来记录每一秒的变化
+    //找到按钮	
+	var btn = document.getElementById("btn");
+    //记录倒计时
+	var num = 10;
+	var timeID=setInterval(function () {
+        //按钮上的文字
+		btn.value = '请阅读此协议('+num+')';
+        //每一秒少一个数字
+		num--;
+        //当倒计时结束之后，按钮上变为“我同意”,停止倒计时
+		if(num == 0){
+            //按钮上的子发生变化
+			btn.value="我同意";
+            //按钮可以点击
+			btn.disabled=false;
+            //清除倒计时
+			clearInterval(timeID);
+		}
+	},1000);//间隔1秒一次
