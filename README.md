@@ -42,3 +42,54 @@
       .then(axios.spread(function (acct, perms) {
         // Both requests are now complete
       }));
+      
+### JS判断移动设备最佳方法 并实现跳转至手机版网页
+##### html =>
+    <div id="wrap" class="wrap">
+		<div id="top" class="top"></div>
+		<div id="bottom" class="bottom"></div>
+	</div>
+	<div style="height: 2000px;width: 100%;"></div>
+##### css =>
+    *{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 100%;
+			height: 300px;
+			position: relative;
+		}
+		.wrap .top{
+			width: 80%;
+			margin: 0 auto;
+			height: 250px;
+			background-color: #FF9999;
+		}
+		.wrap .bottom{
+			width: 80%;
+			margin: 0 auto;
+			height: 50px;
+			background-color: #2323A0;
+		}
+		.wrap .fix{
+			position: fixed;
+			top: 0;
+			left: 10%;
+		}
+##### js =>
+    var wrap,tops,bottom;
+	window.onload=function(){
+		wrap=document.getElementById("wrap")
+		tops=document.getElementById("top");
+		bottom=document.getElementById("bottom");
+		document.onscroll=function(){
+			var scroll=document.body.scrollTop||document.documentElement.scrollTop;
+			if(scroll>=tops.offsetHeight){
+				bottom.classList.add("fix");
+			}
+			else{
+				bottom.classList.remove("fix");
+			}
+		}
+	}
