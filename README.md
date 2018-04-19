@@ -118,3 +118,35 @@
 			clearInterval(timeID);
 		}
 	},1000);//间隔1秒一次
+### 方块动态图
+#### html =>
+	<div class="container">
+			<ul class="boxList">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+#### css =>
+	*{margin: 0; padding: 0;}
+			ul,li{list-style: none;}
+			.container{perspective: 1300;-webkit-perspective:1300;}
+			.boxList{position:absolute;width: 630px;height:630px;left:50%;margin-left:-315px; -webkit-transform-style: preserve-3d;transform-style: preserve-3d;/*animation: a1 2s 1;*/transition: all 2s;}
+			.boxList li{float: left;width: 200px;height: 200px;margin:5px;background: darkcyan;-webkit-transition: all 0.3s;transition: all 0.3s;}
+			.on li:hover{-webkit-transform: translate3d(0,0,30px);transform: translate3d(0,0,30px);background:deepskyblue;box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.5);}
+			.on{webkit-transform: rotateX(75deg) rotateY(0deg) rotateZ(45deg);transform: rotateX(75deg) rotateY(0deg) rotateZ(45deg);}
+#### js =>
+	var list=document.querySelector('.boxList');
+		window.onload=function(){
+			setInterval(transition,1000)
+			
+		}
+		function transition(){
+			list.className='on boxList';
+		}
