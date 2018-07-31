@@ -93,7 +93,7 @@
 			}
 		}
 	}
-### 倒计时
+### 5.倒计时
 #### html =>
 	<input type="button" value="请阅读此协议(10)" disabled=disabled id="btn"/>
 #### js =>
@@ -118,7 +118,7 @@
 			clearInterval(timeID);
 		}
 	},1000);//间隔1秒一次
-### 方块动态图
+### 6.方块动态图
 #### html =>
 	<div class="container">
 			<ul class="boxList">
@@ -150,7 +150,7 @@
 		function transition(){
 			list.className='on boxList';
 		}
-### 密码强度检测
+### 7.密码强度检测
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>密码强度检测</title>
@@ -221,7 +221,7 @@
 	<div id="tips"><span></span><span></span><span></span><span></span></div>
 	</body>
 	</html>
-### 密码强度检测
+### 8.密码强度检测
 	遮罩层：
 	    width: 100%;
 	    height: 100%;
