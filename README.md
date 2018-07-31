@@ -221,3 +221,25 @@
 	<div id="tips"><span></span><span></span><span></span><span></span></div>
 	</body>
 	</html>
+### 密码强度检测
+	遮罩层：
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    background: rgba(0,0,0,0.6);
+	    z-index: 100;
+	显示层：
+	    width: 100%;
+	    height: 500px;
+	    background: url(box_bg.png) no-repeat;
+	    background-size: cover;
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    z-index: 200;
