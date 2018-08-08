@@ -221,7 +221,7 @@
 	<div id="tips"><span></span><span></span><span></span><span></span></div>
 	</body>
 	</html>
-### 8.密码强度检测
+### 8.显示屏居中
 	遮罩层：
 	    width: 100%;
 	    height: 100%;
