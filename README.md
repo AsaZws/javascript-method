@@ -243,3 +243,22 @@
 	    -webkit-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    z-index: 200;
+### 9.JS实现键盘监听(包括组合键)
+       document.onkeydown=function(event){ 
+            var e = event || window.event || arguments.callee.caller.arguments[0]; 
+            if(e && e.keyCode==27){ // 按 Esc  
+                //要做的事情 
+				alert("按 esc"); 
+            } 
+            if(e && e.keyCode==113){ // 按 F2  
+                //要做的事情 
+				alert("按 f2"); 
+            }             
+            if(e && e.keyCode==13){ // enter 键 
+                //要做的事情 
+				alert("按 Enter"); 
+            }
+			if (e.keyCode == 86 && e.ctrlKey) {  
+                alert("你按下了ctrl+V");  
+            }
+         }; 
